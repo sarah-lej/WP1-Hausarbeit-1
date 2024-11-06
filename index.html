@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+
     <meta charset="UTF-8">
     <title>Meine Hausübung WP1</title>
+    <style>
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 15px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 15px;word-break:normal;}
+        .tg .tg-mcqj{border-color:#000000;font-weight:bold;text-align:left;vertical-align:top}
+        .tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+    </style>
 </head>
-<body>
+
+<body style="font-family: Arial, sans-serif;" >
+
     <h1> Meine Hausübung WP1 </h1>
     <h4> Sarah Lejla Krause <br> 31.10.2024</h4>
 
@@ -592,7 +604,70 @@
     <li> Zeichen benötigen 1-4 Bytes (8 Bits) (von häufig bis selten)</li>
     <li> Ersten 128 Zeichen wie in ASCII</li>
 </ul>
-<p> UTF-8 (Dezimalzahl): 83 97 114 97 104 32 76 101 106 108 97 32 75 114 97 117 115 101 </p>
+<p> UTF-8 (Dezimalzahl): 83 97 114 97 104 32 76 101 106 108 97 32 75 114 97 117 115 101 <br>
+-> In UTF-8 unterscheiden sich die ersten 128 Zeichen im Dezimalsystem nicht von ASCII weswegen der Dezimal-code in UTF-8 dem ASCII-Code gleicht </p>
+
+<p> 2.3 Huffman </p>
+<p> ??? </p>
+
+    <h3> <u> 3. Informationsgehalt </u> </h3>
+<p> 3.1 Von Worten</p>
+<p> H = (&#8721;h*p)/N <br>
+L = (&#8721;l*p)/N <br>
+    R = L-H <br>
+    r= R/L
+</p>
+<p> Attentat&nbsp;&nbsp;&nbsp;  N=8 </p>
+
+
+    <table class="tg"><thead>
+    <tr>
+        <th class="tg-mcqj">x</th>
+        <th class="tg-mcqj">n</th>
+        <th class="tg-mcqj">p</th>
+        <th class="tg-mcqj">h</th>
+        <th class="tg-mcqj">Huffman</th>
+        <th class="tg-mcqj">l</th>
+    </tr></thead>
+        <tbody>
+        <tr>
+            <td class="tg-73oq">a</td>
+            <td class="tg-73oq">2</td>
+            <td class="tg-73oq">1/4</td>
+            <td class="tg-73oq">ld(4) = 2 Bit</td>
+            <td class="tg-73oq">10</td>
+            <td class="tg-73oq">2</td>
+        </tr>
+        <tr>
+            <td class="tg-73oq">t</td>
+            <td class="tg-73oq">4</td>
+            <td class="tg-73oq">1/2</td>
+            <td class="tg-73oq">ld(2) = 1 Bit</td>
+            <td class="tg-73oq">0</td>
+            <td class="tg-73oq">1</td>
+        </tr>
+        <tr>
+            <td class="tg-73oq">e</td>
+            <td class="tg-73oq">1</td>
+            <td class="tg-73oq">1/8</td>
+            <td class="tg-73oq">ld(8) = 3 Bit</td>
+            <td class="tg-73oq">111</td>
+            <td class="tg-73oq">3</td>
+        </tr>
+        <tr>
+            <td class="tg-73oq">n</td>
+            <td class="tg-73oq">1</td>
+            <td class="tg-73oq">1/8</td>
+            <td class="tg-73oq">ld(8) = 3 Bit</td>
+            <td class="tg-73oq">110</td>
+            <td class="tg-73oq">3</td>
+        </tr>
+        </tbody></table>
+<p> H = (2*(1/4)+1*(2/4)+6*(1/8)) / 8 = 14/8 = 1,75 <br>
+L = (2*(1/4)+1*(2/4)+6*(1/8)) / 8 = 14/8 = 1,75 <br>
+R = 1,75-1,75 = 0 <br>
+r = 0/1,75 = 0 <br>
+r= 0%</p>
 
 </body>
 </html>
