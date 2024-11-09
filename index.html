@@ -43,7 +43,7 @@
 
     <p> 4341 => 1000011110101<sub>2</sub> </p>
 
-<h4> In das Oktale Zalensystem (2/4): </h4>
+<h4> In das Oktale Zahlensystem (2/4): </h4>
 <p> 4341 : 8 = 542  &nbsp;&nbsp;R5  <br>
     <u>40 &nbsp; </u> <br>
     &nbsp; 34 <br>
@@ -593,8 +593,8 @@
     Hexadezimal: 53 61 72 61 68 20 4C 65 6A 6C 61 20 4B 72 61 75 73 65 <br>
     Binär: 1010011 1100001 1110010 1100001 1101000 0100000 1001100 1100101 1101010 1101100 1100001 0100000 1001011 1110010 1100001 1110101 1110011 1100101
 </p>
-  <p>  -> Ja, mein Name lässt sich ohne Weiteres codieren, da es alle Zeichen in ASCII gibt.<br>
--> Der Binär- und Hexadezimalcode lassen sich problemlos decodieren, da diese Präfixfrei sind (Feste Länge = keine Mehrdeutigkeiten).<br>
+  <p>  → Ja, mein Name lässt sich ohne Weiteres codieren, da es alle Zeichen in ASCII gibt.<br>
+→ Der Binär- und Hexadezimalcode lassen sich problemlos decodieren, da diese Präfixfrei sind (Feste Länge = keine Mehrdeutigkeiten).<br>
       Der Dezimalzahlcode ist jedoch nur mit Trennzeichen (z.B. Leerzeichen) decodierbar, <br>
       da er sonst nicht präfixfrei ist, man könnte also beispielsweise 8397 als 83 97 sowie 8 39 7 interpretieren.
   </p>
@@ -604,12 +604,38 @@
     <li> Zeichen benötigen 1-4 Bytes (8 Bits) (von häufig bis selten)</li>
     <li> Ersten 128 Zeichen wie in ASCII</li>
 </ul>
-<p> UTF-8 (Dezimalzahl): 83 97 114 97 104 32 76 101 106 108 97 32 75 114 97 117 115 101 <br>
--> In UTF-8 unterscheiden sich die ersten 128 Zeichen im Dezimalsystem nicht von ASCII, weswegen der Dezimal-code meines Namens in UTF-8 dem ASCII-Code gleicht </p>
+<p> Mein Name in: UTF-8 (Dezimalzahl): 83 97 114 97 104 32 76 101 106 108 97 32 75 114 97 117 115 101 <br>
+→ In UTF-8 unterscheiden sich die ersten 128 Zeichen im Dezimalsystem nicht von ASCII, weswegen der Dezimal-code meines Namens in UTF-8 dem ASCII-Code gleicht. </p>
 
 <p> 2.3 Huffman </p>
-<p> ??? </p>
+    <img src="./Bilder%20WP1/Alphabet%20Huffman.png" alt="Alphabet Huffman"  style="width: 100%; max-width: 600px;">
 
+<p>
+    S: 1011 &nbsp; &nbsp; 4<br>
+    A: 1001 &nbsp; &nbsp; 4<br>
+    R: 1010 &nbsp; &nbsp; 4<br>
+    A: 1001 &nbsp; &nbsp; 4<br>
+    H: 0101 &nbsp; &nbsp; 4<br>
+    <br>
+    L: 10001 &nbsp; &nbsp; 5<br>
+    E: 111 &nbsp; &nbsp; &nbsp; &nbsp; 3<br>
+    J: 000000001 &nbsp; &nbsp; 9 <br>
+    L: 10001 &nbsp; &nbsp; 5<br>
+    A: 1001 &nbsp; &nbsp; &nbsp; 4<br>
+    <br>
+    K: 000001 &nbsp;6 <br>
+    R: 1010 &nbsp; &nbsp; 4<br>
+    A: 1001 &nbsp; &nbsp; 4<br>
+    U: 11001 &nbsp;  5 <br>
+    S: 1011 &nbsp; &nbsp; 4<br>
+    E: 111 &nbsp; &nbsp; &nbsp;&nbsp;3<br>
+
+<p>
+<b> Bit-Anzahl: </b><br>
+        ASCII: 18 * 7 = 126 <br>
+        Huffman: 9*4+3*5+2*3+9+6 = 72 <br> <br>
+        -> Es werden 54 (126-72) Bits gespart.
+</p>
     <h3> <u> 3. Informationsgehalt </u> </h3>
 <p> 3.1 Von Worten</p>
 <p> H = (&#8721;n*h)/N = &#8721;p*h  <br>
@@ -1887,5 +1913,14 @@ L= 4 * 4 * 1/12 + 2 * 3 * 1/6 + 1 * 1/3 <br>
         r = 0 / 3 = <u>0</u>
     </p>
 
+<p> <b>Antworten:</b> <br>
+    Jeder dieser Begriffe hat eine gerade Anzahl an Buchstaben (8,12 oder 16) <br>
+und auch gerade "Wiederholungsanzahlen" von Buchstaben im Wort (1,2,oder 4). <br>
+→ Das fürt dazu, dass bei Wörtern mit 8 und 16 Buchstaben, die relative Redundanz 0 ist <br>
+    und bei N=16 ist sie zwar klein aber ≠ 0. Denn: von 1;2;4/8 und 1;2;4/16 ist der (umgekehrte) binäre Logarithmus <br>
+    immer eine ganze Zahl UND auch immer die gleiche Zahl wie die Codewortlänge der Huffmancodierung (Optimal kompressiert). <br>
+    Bei Wörtern mit N = 12 ist H nie eine ganze Zahl gewesen, da ld(12/1;2;4) = Kommazahl (z.B. 1,58 ...). Das kann mit der Wortlänge vom Huffmanbaum natürlich <br>
+    nicht erreichen, weswegen dort am Ende nicht R=0 gilt.
+</p>
 </body>
 </html>
