@@ -1124,7 +1124,7 @@ r = 0/1,75 = 0 <br>
         L = 2*3*(1/6) + 4*4*(1/12) + 1*(1/3) <br>
         &nbsp; = 1 + 4/3 + 1/3 = 8/3 <br>
         R = 8/3 - 5/2 = 16/6 - 15/6 = 1/6 <br>
-        r ≈ (1/6) / (8/3)  = <u> 3/48 </u>
+        r ≈ (1/6) / (8/3)  = 3/48 = <u>  1/16</u>
     </p>
     <p> 8. Tabellenende &nbsp;&nbsp;&nbsp; N=12 </p>
 
@@ -1203,7 +1203,7 @@ r = 0/1,75 = 0 <br>
 L= 4 * 4 * 1/12 + 2 * 3 * 1/6 + 1 * 1/3 <br>
 = 16/12 + 1 + 1/3 = 8/3<br>
     R= 8/3 - 5/2 = 1/6 <br>
-    r ≈ (1/6) / (8/3)  = <u> 3/48 </u>
+    r ≈ (1/6) / (8/3)  = 3/48 = <u>  1/16 </u>
 </p>
 
     <p> 9. Zeichenkette&nbsp;&nbsp;&nbsp; N=12 </p>
@@ -1289,10 +1289,8 @@ L= 4 * 4 * 1/12 + 2 * 3 * 1/6 + 1 * 1/3 <br>
 
     <p> H = 6 * 3,5 * 1/12 + 1,5 * 1/3 + 2,5 * 1/6 <br>
         = 21/12 + 1/2 + 5/12 = 8/3 </p>
-
     <p> L = 6 * 4 * 1/12 + 3 * 1/6 + 1 * 1/3 <br>
         = 24/12 + 1/2 + 1/3 = 17/6</p>
-
     <p> R = 17/6 - 8/3 = 1/6 </p>
 
     <p> r ≈ (1/6) / (17/3) = <u> 3/102 </u> </p>
@@ -1613,7 +1611,7 @@ L= 4 * 4 * 1/12 + 2 * 3 * 1/6 + 1 * 1/3 <br>
     </p>
 
 
-    <p> 12. Abenteuerromanze &nbsp; &nbsp; &nbsp; N=16</p>
+    <p> 13. Abenteuerromanze &nbsp; &nbsp; &nbsp; N=16</p>
     <table class="tg">
         <thead>
         <tr>
@@ -1719,7 +1717,7 @@ L= 4 * 4 * 1/12 + 2 * 3 * 1/6 + 1 * 1/3 <br>
 
 
 
-    <p>13. Wissensexplosion&nbsp;&nbsp;&nbsp; N=16</p>
+    <p>14. Wissensexplosion&nbsp;&nbsp;&nbsp; N=16</p>
     <table class="tg">
         <thead>
         <tr>
@@ -1816,7 +1814,7 @@ L= 4 * 4 * 1/12 + 2 * 3 * 1/6 + 1 * 1/3 <br>
         r = 0 / 3 = <u>0</u>
     </p>
 
-    <p>14. Junggesellenbude&nbsp;&nbsp;&nbsp; N=16</p>
+    <p>15. Junggesellenbude&nbsp;&nbsp;&nbsp; N=16</p>
     <table class="tg">
         <thead>
         <tr>
@@ -1907,6 +1905,7 @@ L= 4 * 4 * 1/12 + 2 * 3 * 1/6 + 1 * 1/3 <br>
 
     <p>
         H = 2 * 1/4 + 4 * 4 * 1/16 + 4 * 3 * 1/8 <br>
+
         = 2/4 + 1 + 3/2 = 3 <br>
         L = 4 2 * 1/4 + 4 * 4 * 1/16 + 4 * 3 * 1/8 = 3<br>
         R = 3 - 3 = 0 <br>
@@ -1921,6 +1920,63 @@ und auch gerade "Wiederholungsanzahlen" von Buchstaben im Wort (1,2,oder 4). <br
     immer eine ganze Zahl UND auch immer die gleiche Zahl wie die Codewortlänge der Huffmancodierung (Optimal kompressiert). <br>
     Bei Wörtern mit N = 12 ist H nie eine ganze Zahl gewesen, da ld(12/1;2;4) = Kommazahl (z.B. 1,58 ...). Das kann mit der Wortlänge vom Huffmanbaum natürlich <br>
     nicht erreichen, weswegen dort am Ende nicht R=0 gilt.
+</p>
+
+<h4><u> 3.2 Von Nachrichten </u> </h4>
+
+<p>
+    1. Nachricht (links) <br> <br>
+    Huffman-Baum: <br>
+
+</p>
+    <p> N=665</p>
+    <table class="tg">
+        <thead>
+        <tr>
+            <th class="tg-mcqj">x</th>
+            <th class="tg-mcqj">n</th>
+            <th class="tg-mcqj">p</th>
+            <th class="tg-mcqj">h</th>
+            <th class="tg-mcqj">Huffman</th>
+            <th class="tg-mcqj">l</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td class="tg-73oq">E</td><td class="tg-73oq">107</td><td class="tg-73oq">107/665</td><td class="tg-73oq">ld(665/107) = 2,64 Bit</td><td class="tg-73oq">110</td><td class="tg-73oq">3</td></tr>
+        <tr><td class="tg-73oq">S</td><td class="tg-73oq">59</td><td class="tg-73oq">59/665</td><td class="tg-73oq">ld(665/59) = 3,49 Bit</td><td class="tg-73oq">1111</td><td class="tg-73oq">4</td></tr>
+        <tr><td class="tg-73oq">D</td><td class="tg-73oq">28</td><td class="tg-73oq">28/665</td><td class="tg-73oq">ld(665/28) = 4,57 Bit</td><td class="tg-73oq">11101</td><td class="tg-73oq">5</td></tr>
+        <tr><td class="tg-73oq">U</td><td class="tg-73oq">28</td><td class="tg-73oq">28/665</td><td class="tg-73oq">ld(665/28) = 4,57 Bit</td><td class="tg-73oq">11100</td><td class="tg-73oq">5</td></tr>
+        <tr><td class="tg-73oq">A</td><td class="tg-73oq">42</td><td class="tg-73oq">42/665</td><td class="tg-73oq">ld(665/42) = 3,98 Bit</td><td class="tg-73oq">1011</td><td class="tg-73oq">4</td></tr>
+        <tr><td class="tg-73oq">C</td><td class="tg-73oq">20</td><td class="tg-73oq">20/665</td><td class="tg-73oq">ld(665/20) = 5,06 Bit</td><td class="tg-73oq">10101</td><td class="tg-73oq">5</td></tr>
+        <tr><td class="tg-73oq">F</td><td class="tg-73oq">18</td><td class="tg-73oq">18/665</td><td class="tg-73oq">ld(665/18) = 5,21 Bit</td><td class="tg-73oq">10100</td><td class="tg-73oq">5</td></tr>
+        <tr><td class="tg-73oq">I</td><td class="tg-73oq">43</td><td class="tg-73oq">43/665</td><td class="tg-73oq">ld(665/43) = 3,95 Bit</td><td class="tg-73oq">1001</td><td class="tg-73oq">4</td></tr>
+        <tr><td class="tg-73oq">G</td><td class="tg-73oq">24</td><td class="tg-73oq">24/665</td><td class="tg-73oq">ld(665/24) = 4,79 Bit</td><td class="tg-73oq">10001</td><td class="tg-73oq">5</td></tr>
+        <tr><td class="tg-73oq">M</td><td class="tg-73oq">14</td><td class="tg-73oq">14/665</td><td class="tg-73oq">ld(665/14) = 5,57 Bit</td><td class="tg-73oq">100001</td><td class="tg-73oq">6</td></tr>
+        <tr><td class="tg-73oq">W</td><td class="tg-73oq">9</td><td class="tg-73oq">9/665</td><td class="tg-73oq">ld(665/9) = 6,21 Bit</td><td class="tg-73oq">100000</td><td class="tg-73oq">6</td></tr>
+        <tr><td class="tg-73oq">L</td><td class="tg-73oq">36</td><td class="tg-73oq">36/665</td><td class="tg-73oq">ld(665/36) = 4,21 Bit</td><td class="tg-73oq">0111</td><td class="tg-73oq">4</td></tr>
+        <tr><td class="tg-73oq">R</td><td class="tg-73oq">36</td><td class="tg-73oq">36/665</td><td class="tg-73oq">ld(665/36) = 4,21 Bit</td><td class="tg-73oq">0110</td><td class="tg-73oq">4</td></tr>
+        <tr><td class="tg-73oq">N</td><td class="tg-73oq">69</td><td class="tg-73oq">69/665</td><td class="tg-73oq">ld(665/69) = 3,27 Bit</td><td class="tg-73oq">010</td><td class="tg-73oq">3</td></tr>
+        <tr><td class="tg-73oq">T</td><td class="tg-73oq">34</td><td class="tg-73oq">34/665</td><td class="tg-73oq">ld(665/34) = 4,29 Bit</td><td class="tg-73oq">0011</td><td class="tg-73oq">4</td></tr>
+        <tr><td class="tg-73oq">O</td><td class="tg-73oq">16</td><td class="tg-73oq">16/665</td><td class="tg-73oq">ld(665/16) = 5,38 Bit</td><td class="tg-73oq">00101</td><td class="tg-73oq">5</td></tr>
+        <tr><td class="tg-73oq">Z</td><td class="tg-73oq">8</td><td class="tg-73oq">8/665</td><td class="tg-73oq">ld(665/8) = 6,38 Bit</td><td class="tg-73oq">001001</td><td class="tg-73oq">6</td></tr>
+        <tr><td class="tg-73oq">Ü</td><td class="tg-73oq">6</td><td class="tg-73oq">6/665</td><td class="tg-73oq">ld(665/6) = 6,79 Bit</td><td class="tg-73oq">001000</td><td class="tg-73oq">6</td></tr>
+        <tr><td class="tg-73oq">H</td><td class="tg-73oq">35</td><td class="tg-73oq">35/665</td><td class="tg-73oq">ld(665/35) = 4,25 Bit</td><td class="tg-73oq">0001</td><td class="tg-73oq">4</td></tr>
+        <tr><td class="tg-73oq">B</td><td class="tg-73oq">16</td><td class="tg-73oq">16/665</td><td class="tg-73oq">ld(665/16) = 5,38 Bit</td><td class="tg-73oq">00001</td><td class="tg-73oq">5</td></tr>
+        <tr><td class="tg-73oq">K</td><td class="tg-73oq">8</td><td class="tg-73oq">8/665</td><td class="tg-73oq">ld(665/8) = 6,38 Bit</td><td class="tg-73oq">000001</td><td class="tg-73oq">6</td></tr>
+        <tr><td class="tg-73oq">P</td><td class="tg-73oq">4</td><td class="tg-73oq">4/665</td><td class="tg-73oq">ld(665/4) = 7,38 Bit</td><td class="tg-73oq">0000001</td><td class="tg-73oq">7</td></tr>
+        <tr><td class="tg-73oq">J</td><td class="tg-73oq">3</td><td class="tg-73oq">3/665</td><td class="tg-73oq">ld(665/3) = 7,79 Bit</td><td class="tg-73oq">00000001</td><td class="tg-73oq">8</td></tr>
+        <tr><td class="tg-73oq">Ä</td><td class="tg-73oq">1</td><td class="tg-73oq">1/665</td><td class="tg-73oq">ld(665/1) = 9,38 Bit</td><td class="tg-73oq">000000001</td><td class="tg-73oq">9</td></tr>
+        <tr><td class="tg-73oq">V</td><td class="tg-73oq">1</td><td class="tg-73oq">1/665</td><td class="tg-73oq">ld(665/1) = 9,38 Bit</td><td class="tg-73oq">000000000</td><td class="tg-73oq">9</td></tr>
+
+    </table>
+
+<p>
+H = ∑p⋅h = (107/665∗2.64)+(59/665∗3.49)+(28/665∗4.57)+(28/665∗4.57)+(42/665∗3.98)+(20/665∗5.06)+(18/665∗5.21)+(43/665∗3.95)+(24/665∗4.79)+(14/665∗5.57)+(9/665∗6.21)+(36/665∗4.21)+(36/665∗4.21)+(69/665∗3.27)+(34/665∗4.29)+(16/665∗5.38)+(8/665∗6.38)+(6/665∗6.79)+(35/665∗4.25)+(16/665∗5.38)+(8/665∗6.38)+(4/665∗7.38)+(3/665∗7.79)+(1/665∗9.38)+(1/665∗9.38) <br>
+    = 4,113 <br>
+L = ∑p⋅l = (107/665∗3)+(59/665∗4)+(28/665∗5)+(28/665∗5)+(42/665∗4)+(20/665∗5)+(18/665∗5)+(43/665∗4)+(24/665∗5)+(14/665∗6)+(9/665∗6)+(36/665∗4)+(36/665∗4)+(69/665∗3)+(34/665∗4)+(16/665∗5)+(8/665∗6)+(6/665∗6)+(35/665∗4)+(16/665∗5)+(8/665∗6)+(4/665∗7)+(3/665∗8)+(1/665∗9)+(1/665∗9) <br>
+    = 4,147
+R = L - H = 4,147 - 4,113 = 0,034 <br>
+    r = R/L = 0,034/4,147 = 0,0082
 </p>
 </body>
 </html>
